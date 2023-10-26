@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+    link(rel='stylesheet', href='styles/index.css')
+  body 
+    #panel
+      h2 發表一篇留言
+      form(action="") 
+        .wrapper
+          label(for="text") 文字內容
+          input(id="text" name="text")
+        .wrapper
+          label(for="image") 圖片
+          input(id="image" name="image" type="file")
+        input(type="submit" value="送出")
+    #messages
+      .message
+        .text 測試
+        img.image
+
+script(src="scripts/index.js") 
