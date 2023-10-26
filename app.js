@@ -61,7 +61,6 @@ app.post("/message", upload.single("image"), async (req, res) => {
   let { text } = req.body
   try{
     let key = Date.now().toString()
-    // let imageUrl = `https://${BUCKET_NAME}.s3.${S3_BUCKET_REGION}.amazonaws.com/${key}`;
     let imageUrl = `http://d39z1uqnre40a.cloudfront.net/${key}`;
     let command = new PutObjectCommand({
       Bucket: BUCKET_NAME,
